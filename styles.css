@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* font-family: 'Red Hat Display', sans-serif; */
+
+.container {
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-size: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-color: #E0E8FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 1em;
+}
+
+.img img {
+    width: 100%;
+
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+h1.orderReview {
+    font-weight: 900;
+    font-size: 1.75em;
+    padding-bottom: 24px;
+    color: hsl(223, 47%, 23%);
+}
+
+p.orderDesc {
+    padding-bottom: 1.75em;
+    text-align: center;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.chosenPlan {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.75em;
+    padding: 1em;
+    background-color:hsl(225, 100%, 98%);
+    border-radius: 8px;
+}
+
+
+p.changePlan {
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: .85em;
+    cursor: pointer;
+}
+
+p.changePlan:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 70%);
+}
+
+h5.planName {
+    font-weight: 900;
+    font-size: .85em;
+    color: hsl(223, 47%, 23%);
+    padding-bottom: .5em;
+}
+
+p.planPrice {
+    color: hsl(224, 23%, 55%);
+
+}
+
+
+button.cta {
+    cursor: pointer;
+    border-style: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    width: 100%;
+    padding: 1.25em 0 1.25em 0;
+    border-radius: 8px;
+    margin-bottom: 1.75em;
+    box-shadow: 0px 10px 20px hsl(224, 23%, 75%);
+    transition: 0.3s ease;
+}
+
+button.cta:hover {
+    background-color: hsl(245, 75%, 70%);
+}
+
+.orderCancel {
+    cursor: pointer;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.orderCancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 375px) {
+    .card-grid {
+        max-width: 350px;
+    }
+
+
+}
+
